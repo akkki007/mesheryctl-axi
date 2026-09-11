@@ -35,7 +35,8 @@ ships code that already passed CI.
 ## One-time setup (maintainer with admin rights)
 
 These steps need a human with npm and repository admin access. Until the first one is
-done, publishing a release fails at the `Require NPM_TOKEN` step by design.
+done, publishing a release fails at the `Require NPM_TOKEN` step by design. Tracked in
+[#4](https://github.com/meshery-extensions/mesheryctl-axi/issues/4).
 
 1. **`NPM_TOKEN` repository secret (required).** Create an npm token that can publish
    the unscoped package `mesheryctl-axi`, owned by the npm account that should own the

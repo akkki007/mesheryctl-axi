@@ -29,7 +29,7 @@ npx -y mesheryctl-axi
 
 ## Project status
 
-**Pre-release (v0.x).** The package structure, error contract, TOON rendering, and release pipeline are in place. Some v1 commands still depend on `mesheryctl` output that does not exist yet (for example, JSON output from `mesheryctl <resource> list`). See the [open issues](https://github.com/meshery-extensions/mesheryctl-axi/issues) for what is left before the first npm release. Issues labelled [`good first issue`](https://github.com/meshery-extensions/mesheryctl-axi/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22) are a good place to start.
+**Pre-release (v0.x).** The package structure, error contract, TOON rendering, and release pipeline are in place. Some v1 commands still depend on `mesheryctl` output that does not exist yet (for example, JSON output from `mesheryctl <resource> list`). [#12](https://github.com/meshery-extensions/mesheryctl-axi/issues/12) tracks everything left before the first npm release. Issues labelled [`good first issue`](https://github.com/meshery-extensions/mesheryctl-axi/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22) are a good place to start.
 
 ## Prerequisites
 
