@@ -32,7 +32,8 @@ This project changes how that capability reaches an agent, never what it is.
 ### Reporting is compact, content is canonical
 
 Reports about Meshery resources, such as lists, statuses, and errors, are shaped so an agent can read them cheaply.
-Meshery documents themselves, such as designs and models, are returned in their canonical schema form and are never converted into the reporting format.
+That shape is **TOON**, which carries the repeated, tabular results agents ask for most in far fewer tokens than the equivalent JSON.
+Meshery documents themselves, such as designs and models, are returned in their canonical schema form and are never converted into TOON.
 
 ### Never block, never guess
 
@@ -53,5 +54,5 @@ Improvements that help everyone, such as fixes for interactive prompts, belong u
 
 - Replacing `mesheryctl` for human users.
 - Changing the meaning of `mesheryctl`'s existing output flags.
-- Converting designs, models, or other Meshery documents into report output.
+- Converting designs, models, or other Meshery documents into TOON.
 - Providing a stable interface for hand-written parsers or scripts.
