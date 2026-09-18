@@ -2,6 +2,8 @@
 
 `mesheryctl-axi` is an agent-ergonomic interface to Meshery, built on the official Meshery CLI, `mesheryctl`.
 
+Token-efficient reporting in [TOON](https://toonformat.dev/) is a founding reason this wrapper exists: it reshapes the repeated, tabular output agents read most so that output costs a fraction of the tokens, while Meshery documents stay in their canonical form.
+
 ## Scope
 
 We aim for full functional parity with `mesheryctl`.
@@ -32,8 +34,8 @@ This project changes how that capability reaches an agent, never what it is.
 ### Reporting is compact, content is canonical
 
 Reports about Meshery resources, such as lists, statuses, and errors, are shaped so an agent can read them cheaply.
-That shape is **TOON**, which carries the repeated, tabular results agents ask for most in far fewer tokens than the equivalent JSON.
-Meshery documents themselves, such as designs and models, are returned in their canonical schema form and are never converted into TOON.
+That shape is [**TOON**](https://toonformat.dev/), which carries the repeated, tabular results agents ask for most in far fewer tokens than the equivalent JSON.
+Meshery documents themselves, such as designs and models, are returned in their canonical schema form and are never converted into [TOON](https://toonformat.dev/).
 
 ### Never block, never guess
 
@@ -54,5 +56,5 @@ Improvements that help everyone, such as fixes for interactive prompts, belong u
 
 - Replacing `mesheryctl` for human users.
 - Changing the meaning of `mesheryctl`'s existing output flags.
-- Converting designs, models, or other Meshery documents into TOON.
+- Converting designs, models, or other Meshery documents into [TOON](https://toonformat.dev/).
 - Providing a stable interface for hand-written parsers or scripts.
